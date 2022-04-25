@@ -22,6 +22,7 @@ public class QuestionThreeTest {
     @Test
     void dragAndDropTest() {
         open("");
+        //actions().dragAndDrop($("#column-a"),$("#column-b")).perform(); //still not working :(
         $("#column-a").dragAndDropTo(bi);
         bi.shouldHave(text("A"));
     }
